@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Website</title>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+	<style type="text/css">
+		
+		/*My Code*/
+		
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+		}
+
+		main {
+               padding-top: 100px;
+		}
+		
+		header{
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			background-color: #fff;
+			width: 100%;
+			height: 100px;
+		}
+		
+		header .header-brand{
+			font-family: catamaran;
+			font-weight: 900;
+			font-size: 20px;
+			color: #111;
+			text-transform: uppercase;
+			display: block;
+			margin: 0px auto;
+			text-align: center;
+			padding: 20px 0px;
+		}
+		header nav ul{
+			display: block;
+			margin: 0 auto;
+			width: fit-content;
+		}
+		
+		header nav ul li{
+			display: inline-block;
+			float: left;
+			list-style: none;
+			padding: 0 14px;
+			
+		}
+		
+		header nav li a{
+			font-family: catamaran;
+			font-size: 16px;
+			color: #111;
+			text-transform: uppercase;
+		}
+		
+		header .header-cases{
+			display: none;
+		}
+		/*Index*/
+		.index-banner{
+			width: 100%;
+			height: calc(90vh - 100px);
+			background-image: url('photo.jpeg');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: table;
+		}
+		
+		.vertical-center{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.index-banner h2{
+			font-family: catamaran;
+			font-size: 60px;
+			font-weight: 900;
+			color: #fff;
+			line-height: 70px;
+			text-align: center;
+			text-shadow: 2px 2px 8px #111;
+		}
+		
+		.index-banner h1{
+			font-family: cormorant Garamond;
+			font-size: 28px;
+			font-style: italic;
+			line-height: 40px;
+			font-weight: 100;
+			color: #fff;
+			text-align: center;
+			text-shadow: 2px 2px 8px #111;
+		}
+		
+		.index-links div {
+			margin: 16px 16px 0; 
+			width: calc(100% - 100px);
+			height: 100px;
+			background-color: #f2f2f2;
+		}
+		
+		.index-links div h3{
+			font-family: catamaran;
+			font-size: 28px;
+			line-height: 100px;
+			font-weight: 600;
+			color: #111;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		
+		@media only screen and (min-width:1000px) {
+			header .header-brand{
+				margin: 31px 0px;
+				text-align: left;
+				padding: 0px 20px 0px 40px;
+				border-right: 3px solid #111;
+				float: left;
+			}
+			header nav ul{
+				margin: 3px 0px 0px 20px;
+				float: left;
+			}
+			
+			header nav li a{
+				text-transform: uppercase;
+				line-height: 90px;
+			}
+			
+			header .header-cases{
+				display: block;
+				font-family: catamaran;
+				font-size: 16px;
+				color: #111;
+				text-transform: uppercase;
+				line-height: 38px;
+				border: 1px solid #111;
+				margin-right: 40px;
+				padding: 0px 20px;
+				margin-top: 30px;
+				float: right;
+			}
+
+			.wrapper{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			
+			.index-banner{
+				height:450px;
+			}
+			.index-banner h1{
+				display: block;
+				width: 700px;
+				margin: 0 auto;
+			}
+			
+			.index-links div {
+				margin: 20px 10px 0px;
+				height: 250px;
+				background-color: #f2f2f2;
+				float: left;
+			}
+
+			.index-links {
+
+				padding-bottom: 20px;
+				overflow: hidden;
+			}
+			
+			.index-boxlink-square {
+				width: calc(25% - 25px) !important;
+			}
+			
+			.index-boxlink-rectangle {
+				width: calc(50% - 50px) !important;
+			}
+		.index-links div h3 {
+
+			line-height: 230px;
+		}
+    }
+
+   /*cases*/
+     .cases-links {
+
+           overflow: hidden;
+           margin-bottom: 30px;
+   }
+
+    .cases-links h2 {
+
+           font-family: catamaran;
+           font-size: 28px;
+           font-weight: 600;
+           color: 111#;
+           text-transform: uppercase;
+   }
+   .cases-links .cases-link{
+
+           float: left;
+           width: 230px;
+           margin: 20px 10px 0px; 
+           height: 230px;
+           background-color: #e3e3e3;
+   }
+
+   .cases-links .cases-link p{
+
+           font-family: catamaran;
+           padding-top: 45%;
+           font-size: 24px;
+           font-weight: 600;
+           color: 111#;
+           text-align: center;
+           text-transform: uppercase;
+   }
+
+     /*case*/
+    
+    .cases-vid h2{
+             
+             font-family: catamaran;
+             font-size: 28px;
+             font-weight: 600;
+             color: #111;
+             text-align: center; 
+             text-transform: uppercase;
+    }
+
+    .cases-vid video{
+             
+             display: block;
+             margin: 0 auto;
+             padding: 30px 0px;
+    }
+     
+    .cases-vid article h3{
+              
+              font-family: catamaran;
+              font-size: 28px;
+              font-weight: 600;
+              color: #111;
+              text-transform: uppercase;
+              padding-bottom: 20px;            
+            
+    }
+   
+    .cases-vid article div p{
+              
+              font-family: catamaran;
+              font-size: 16px;
+              font-weight: 600;
+              color: #111;
+              line-height: 24px;
+              text-align: center;
+              text-transform: uppercase;
+              column-count: 3;
+              column-gap: 30px;                     
+    }
+
+
+
+	/*Fotter*/
+	
+	footer {
+		width: calc( 100%- 60px);
+		padding: 40px 50px;
+		background-color: #111;
+		margin-top: 20px;
+		overflow: hidden;
+	}
+	
+	footer ul {
+		width: fit-content;
+		float: left;
+		padding-left: 20px;
+	}
+	/*footer ul li{
+		display: none;
+		list-style: none;
+	}*/
+	footer ul li a {
+		font-family: catamaran;
+		font-size: 16px;
+		color:#fff;
+		line-height: 40px;
+	}
+	.footer-main-cases{
+		display: none;
+	}
+	
+	.footer-sm{
+		width: 80px;
+		float: right;
+	}
+	
+	.footer-sm img{
+		width: 100px;
+		padding-bottom: 10px;
+	}
+	
+    @media only screen and (min-width:1000px) {
+
+    	  .footer-main-cases{
+
+    	  	display: block;
+    	  }
+    footer ul li p {
+		font-family: catamaran;
+		font-size: 16px;
+		color:#fff;
+		line-height: 40px;
+		text-transform: uppercase;
+	}	  
+	footer ul{
+
+		padding-right: 30px;
+	}
+    }
+
+
+</style>
+<body>
+	
+	<header>
+		<a href="index.html" class="header-brand">IAC</a>
+		<nav>
+			<ul>
+				<li><a href="Portfolio.html">Portfolio</a></li>
+				<li><a href="about.html">About me</a></li>
+				<li><a href="content.html">Contact</a></li>
+			</ul>
+			<a href="cases.html" class="header-cases">Cases</a>
+		</nav>
+	</header>
+	    <main>
+	    	<section class="cases-vid">
+	    		<div class="wrapper">
+	    			<h2>Bella</h2>
+	    			<video width="420" height="240" controls>
+	    			<source src="mov.mp4" type="video/mp4">
+                 </video>
+                 </div>
+                 <article class="">
+                 	<h3>REC ! VIDEO</h3>
+                 	<div>
+                 		<p>They say good things come in small packages, and so is the case with the pick of short, yet meaningful quotes that we have lined up for you in this article. Read...get inspired...inspire!They say good things come in small packages, and so is the case with the pick of short, yet meaningful quotes that we have lined up for you in this article. Read...get inspired...inspire!They say good things come in small packages, and so is the case with the pick of short, yet meaningful quotes that we have lined up for you in this article. Read...get inspired...inspire!They say good things come in small packages, and so is the case with the pick of short, yet meaningful quotes that we have lined up for you in this article. Read...get inspired...inspire!</p>
+                 	</div>
+                 </article>
+	    		</section>
+		    </main>
+		    <div class="wrapper">
+			<footer>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Cases</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul class="footer-main-cases">
+					<li><p>Latest Cases<p/></li>
+					<li><a>Web development</a></li>
+					<li><a>Web development SEO</a></li>
+					<li><a>YouTube Channel</a></li>
+					<li><a>Video Production</a></li>
+				</ul>
+				<div class="footer-sm">
+					<a href="#">
+						<img src="Youtube-icon.png" alt="yt">
+					</a>
+					<a href="#">
+						<img src="twitter-icon.png" alt="Twitter">
+					</a>
+					<a href="#">
+						<img src="fb.jpg" alt="Facebook">
+					</a>
+				</div>
+			</footer>
+			</div>
+	        </body>
+	        </html>
